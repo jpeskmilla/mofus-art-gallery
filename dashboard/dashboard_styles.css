@@ -1,0 +1,199 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 245, 250);
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Container for consistent spacing */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styles */
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    margin-bottom: 15px;
+}
+
+header h1 {
+    font-family: "Sour Gummy", sans-serif;
+    font-size: 2.2rem;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+}
+
+header a {
+    color: #ff8c9e;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+header a:hover {
+    color: #ff9fad;
+    text-shadow: 0 0 10px rgba(255, 140, 158, 0.8);
+}
+
+/* Navigation styles */
+.main-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    gap: 10px;
+}
+
+.main-nav li {
+    padding: 0 5px;
+}
+
+.main-nav a {
+    display: block;
+    padding: 8px 15px;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.main-nav a:hover, 
+.main-nav a.active {
+    background-color: rgba(255, 140, 158, 0.3);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.main-nav a.active {
+    background-color: rgba(255, 140, 158, 0.5);
+}
+
+h1 {
+    font-family: 'Sour Gummy', sans-serif;
+    font-size: 2.5rem;
+    color: #A55E6A;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.467);
+    margin-bottom: 20px;
+}
+
+/* Main content area */
+main {
+    padding: 20px 0;
+}
+
+/* Footer styles */
+footer {
+    background-color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 30px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries for 
+Responsive Layout */
+
+/* Small tablets and large phones */
+@media screen and (min-width: 576px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+    
+    .main-nav ul {
+        gap: 15px;
+    }
+}
+
+/* Medium devices (tablets) */
+@media screen and (min-width: 768px) {
+    .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+    }
+    
+    .logo {
+        margin-bottom: 0;
+    }
+    
+    .main-nav ul {
+        gap: 5px;
+    }
+    
+    .main-nav a {
+        font-size: 1.1rem;
+    }
+}
+
+/* Large devices (desktops) */
+@media screen and (min-width: 992px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .main-nav ul {
+        gap: 15px;
+    }
+    
+    .main-nav a {
+        padding: 10px 20px;
+    }
+    
+    header {
+        padding: 0;
+    }
+    
+    .header-container {
+        padding: 25px 0;
+    }
+}
+
+/* Extra large devices */
+@media screen and (min-width: 1200px) {
+    .container {
+        padding: 0 40px;
+    }
+}
