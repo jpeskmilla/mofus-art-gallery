@@ -29,10 +29,41 @@
             </nav>
         </div>
     </header>
+    <main class="container">
+        <h1>Add New Artwork</h1>
+        <form id="add-artwork-form" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="artwork-title">Artwork Title</label>
+                <input type="text" id="artwork-title" name="title" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="artwork-image">Image File</label>
+                <input type="file" id="artwork-image" name="image" accept="image/*" required>
+                <div class="image-preview-container">
+                    <img id="image-preview" src="#" alt="Preview" style="display: none; max-width: 300px;">
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="instagram-link">Instagram Post URL</label>
+                <input type="url" id="instagram-link" name="instagram" required placeholder="https://www.instagram.com/p/...">
+                <small>Link to the Instagram post for this artwork</small>
+            </div>
+            
+            <div class="form-controls">
+                <button type="submit" class="btn btn-primary">Add Artwork</button>
+                <a href="dashboard.html" class="btn btn-secondary">Cancel</a>
+            </div>
+        </form>
+        
+        <div id="message" class="message"></div>
+    </main>
     <footer>
         <div class="container">
             <p></p>
         </div>
     </footer>
+    <script src="/js/add_artwork.js"></script>
 </body>
 </html>
