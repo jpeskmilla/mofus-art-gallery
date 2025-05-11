@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
@@ -30,17 +31,18 @@
     <main class="container">
         <div class="gallery-grid">
             <div class="gallery-item-large">
-                <img class="grid-image" src="img/1.jpg" alt="Image 1">
+                <img class="grid-image" src="../img/1.jpg" alt="Image 1" data-instagram="https://www.instagram.com/p/DGlOxb-Rx3h/?img_index=1">
             </div>
             <div class="gallery-item-large">
-                <img class="grid-image" src="img/2.jpg" alt="Image 2">
+                <img class="grid-image" src="../img/2.jpg" alt="Image 2" data-instagram="https://www.instagram.com/p/DEveGGlxKSq/?img_index=1">
             </div>
             <div class="gallery-item-large">
-                <img class="grid-image" src="img/3.jpg" alt="Image 3">
+                <img class="grid-image" src="../img/3.jpg" alt="Image 3" data-instagram="https://www.instagram.com/p/DHw9Hb9pcL8/?img_index=1">
             </div>
             <div class="gallery-item-large">
-                <img class="grid-image" src="img/4.jpg" alt="Image 4">
+                <img class="grid-image" src="../img/4.jpg" alt="Image 4" data-instagram="https://www.instagram.com/p/DDL0Cd9RyDo/?img_index=1">
             </div>
+            <div id="dynamicArtworks"></div>
             <div id="igModal" class="ig-modal">
                 <div class="ig-modal-content">
                     <span class="close-modal">&times;</span>
@@ -57,6 +59,6 @@
         </div>
     </footer>
     <script async src="https://www.instagram.com/embed.js"></script>
-    <script src="onClickIgScrip.js"></script>
+    <script src="../js/onClickIgScript.js"></script>
 </body>
 </html>
