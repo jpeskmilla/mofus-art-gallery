@@ -142,6 +142,51 @@ footer p {
     color: #666;
 }
 
+/* --- FORMULARIO MODERNO --- */
+#artworkForm {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(255,140,158,0.10);
+    padding: 24px 20px 16px 20px;
+    margin-bottom: 2.5rem;
+    align-items: flex-end;
+}
+#artworkForm input, #artworkForm textarea {
+    flex: 1 1 220px;
+    padding: 10px 14px;
+    border: 1.5px solid #ffb6c1;
+    border-radius: 10px;
+    font-size: 1rem;
+    background: #fff5fa;
+    color: #7e424c;
+    transition: border 0.2s, box-shadow 0.2s;
+    margin-bottom: 0;
+}
+#artworkForm input:focus, #artworkForm textarea:focus {
+    border: 2px solid #ff8c9e;
+    outline: none;
+    box-shadow: 0 2px 8px rgba(255,140,158,0.10);
+}
+#artworkForm button[type="submit"] {
+    background: linear-gradient(90deg, #ff8c9e 60%, #ffb6c1 100%);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 28px;
+    font-size: 1.1rem;
+    font-family: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(255,140,158,0.10);
+    transition: background 0.2s, transform 0.2s;
+}
+#artworkForm button[type="submit"]:hover {
+    background: linear-gradient(90deg, #ffb6c1 0%, #ff8c9e 100%);
+    transform: scale(1.04);
+}
 
 /* Add these styles to dashboard_styles.css */
 
@@ -302,14 +347,6 @@ footer p {
     flex-grow: 1;
     cursor: pointer;
 }
-
-
-
-
-
-
-
-
 
 /* Media Queries for 
 Responsive Layout */

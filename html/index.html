@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
@@ -30,7 +31,7 @@
     <main class="container">
         <div class="gallery-grid">
             <div class="gallery-item-large">
-                <img class="grid-image" src="/img/1.jpg" alt="Image 1">
+              <img class="grid-image" src="/img/1.jpg" alt="Image 1">
             </div>
             <div class="gallery-item-large">
                 <img class="grid-image" src="/img/2.jpg" alt="Image 2">
@@ -40,7 +41,9 @@
             </div>
             <div class="gallery-item-large">
                 <img class="grid-image" src="/img/4.jpg" alt="Image 4">
+
             </div>
+            <div id="dynamicArtworks"></div>
             <div id="igModal" class="ig-modal">
                 <div class="ig-modal-content">
                     <span class="close-modal">&times;</span>
@@ -57,9 +60,10 @@
         </div>
     </footer>
     <script async src="https://www.instagram.com/embed.js"></script>
-    <script src="onClickIgScrip.js"></script>
+      <script src="onClickIgScrip.js"></script>
     <script async src="https://www.instagram.com/embed.js"></script>
     <script src="/js/onClickIgScrip.js"></script>
     <script src="/js/gallery.js"></script>
+
 </body>
 </html>

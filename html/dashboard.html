@@ -20,25 +20,31 @@
             </div>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="index.html" class="active">Gallery</a></li>
+                    <li><a href="index.html">Gallery</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Artists</a></li>
                     <li><a href="#">Contact</a></li>
-                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#" class="active">Dashboard</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-        <h1>Dashboard Options</h1>
-        <div class="container">
-            <div class="dashboard-options">
-                <a href="add_artwork.html" class="option">Add Artwork</a>
-                <a href="delete_artwork.html" class="option">Delete Artwork</a>
-            </div>
+    <main class="container">
+      <h2>Gestión de Artworks</h2>
+      <form id="artworkForm" style="margin-bottom: 2rem;">
+        <input type="text" id="artworkTitle" placeholder="Título del artwork" required>
+        <input type="url" id="artworkImage" placeholder="URL de la imagen" required>
+        <input type="url" id="artworkInstagram" placeholder="URL de Instagram (opcional)">
+        <textarea id="artworkDesc" placeholder="Descripción"></textarea>
+        <button type="submit">Añadir Artwork</button>
+      </form>
+      <div id="artworkList" class="gallery-grid"></div>
+    </main>
     <footer>
         <div class="container">
             <p></p>
         </div>
     </footer>
+    <script src="../js/dashboard.js"></script>
 </body>
 </html>
